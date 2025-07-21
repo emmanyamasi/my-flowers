@@ -4,7 +4,8 @@ from tensorflow import keras
 from PIL import Image
 
 # Load model
-model = keras.models.load_model('my_modela.keras')
+model = keras.models.load_model('my_modela.keras', compile=False)
+
 
 # Class names (adjust to your training labels)
 class_names = ['daisy', 'dandelion', 'roses', 'sunflowers', 'tulips']
